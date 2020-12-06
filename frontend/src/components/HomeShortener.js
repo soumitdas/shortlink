@@ -15,8 +15,9 @@ const HomeShortener = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+    // Trim the url for any extra whitespace
     api
-      .shorten({ longUrl })
+      .shorten({ longUrl: longUrl.trim() })
       .then((resp) => {
         setIsLoading(false);
         setLongUrl("");

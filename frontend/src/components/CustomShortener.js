@@ -26,9 +26,18 @@ const CustomShortener = ({ onSuccess }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+    // Trim the url for any extra whitespace
     auth
       .token()
-      .then((authToken) => api.shortenWithCustom(formData, authToken))
+      .then((authToken) =>
+        api.shortenWithCustom(
+          {
+            longUrl: formData.longUrl.trim(),
+            customShortCode: formData.customShortCode.trim(),
+          },
+          authToken
+        )
+      )
       .then((resp) => {
         setIsLoading(false);
         clearFormData();
