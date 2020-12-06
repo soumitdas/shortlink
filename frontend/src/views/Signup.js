@@ -34,7 +34,7 @@ const Signup = () => {
     auth
       .signup(formData.name, formData.email, formData.password)
       .then((_) => {
-        setIsLoading(false);
+        //setIsLoading(false);
       })
       .catch((e) => {
         setIsLoading(false);

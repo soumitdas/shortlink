@@ -32,8 +32,7 @@ const Signin = () => {
     auth
       .signin(formData.email, formData.password)
       .then((_) => {
-        setIsLoading(false);
-        //router.replace(from);
+        //setIsLoading(false);
       })
       .catch((e) => {
         setIsLoading(false);

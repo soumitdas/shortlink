@@ -14,3 +14,22 @@ $family-sans-serif: "Poppins", sans-serif;
 @import "~bulma/sass/components/_all";
 @import "~bulma/sass/helpers/_all";
 @import "~bulma/sass/layout/_all";
+
+.wrapper {
+  min-height: calc(100vh - 3.4rem);
+}
+
+.level-is-shrinkable .level-left,
+.level-is-shrinkable .level-right {
+  flex-shrink: 1;
+}
+
+.is-text-truncated {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.is-mx-auto {
+  margin: 0 auto;
+}

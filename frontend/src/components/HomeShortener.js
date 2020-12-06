@@ -23,7 +23,6 @@ const HomeShortener = () => {
         setShortUrl(resp.data.shortUrl);
         setDisplayCopyLink(true);
         setShortlinks((links) => [resp.data, ...links.slice(0, 2)]);
-        console.log(resp.data);
       })
       .catch((e) => {
         setIsLoading(false);
@@ -41,7 +40,7 @@ const HomeShortener = () => {
         />
       ) : (
         <form onSubmit={handleSubmit}>
-          <div className="field is-grouped">
+          <div className="field is-grouped is-grouped-multiline">
             <p className="control is-expanded">
               <input
                 className="input is-medium"
@@ -70,6 +69,16 @@ const HomeShortener = () => {
           {shortlinks.map((shortlink, index) => (
             <HomeCopyLink key={index} data={shortlink} />
           ))}
+        </div>
+      )}
+      {shortlinks.length > 0 && (
+        <div className="has-text-right">
+          <button
+            onClick={() => setShortlinks([])}
+            className="button is-danger is-outlined is-small"
+          >
+            Clear Recent
+          </button>
         </div>
       )}
     </div>

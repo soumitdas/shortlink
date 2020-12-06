@@ -18,7 +18,7 @@ const LinkAnalytics = ({ shortCode }) => {
         })
         .catch((e) => {
           setLinkData(false);
-          console.log(e);
+          //console.log(e);
         });
     }
   }, [auth]);

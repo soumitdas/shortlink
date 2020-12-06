@@ -21,6 +21,7 @@ const CopyLink = ({
     setTimeout(() => {
       setButtonText("Copy");
       setButtonColor("primary");
+      onChange();
     }, 1000);
   };
 

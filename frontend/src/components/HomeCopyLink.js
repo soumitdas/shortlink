@@ -23,23 +23,25 @@ const HomeCopyLink = ({ data }) => {
   };
 
   return (
-    <nav className="level">
-      <div className="level-left">
+    <nav className="level level-is-shrinkable">
+      <div className="level-left is-text-truncated">
         <div className="level-item">
-          <span>{data.longUrl}</span>
+          <span className="is-text-truncated">{data.longUrl}</span>
         </div>
       </div>
 
       <div className="level-right">
         <div className="level-item">
-          <a
-            href={data.shortUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            ref={shortUrlRef}
-          >
-            {data.shortUrl}
-          </a>
+          <span className="is-text-truncated ml-2">
+            <a
+              href={data.shortUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              ref={shortUrlRef}
+            >
+              {data.shortUrl}
+            </a>
+          </span>
         </div>
         <div className="level-item">
           <div className="buttons">

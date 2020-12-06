@@ -29,8 +29,10 @@ const MyLink = () => {
       <div className="container">
         <div className="block">
           <h6>Created on {dateToMonDDYYYY(linkData.createdAt)}</h6>
-          <h3 className="is-size-4">{linkData.longUrl}</h3>
-          <h5 className="is-size-6">
+          <h3 className="is-size-4" style={{ wordBreak: "break-word" }}>
+            {linkData.longUrl}
+          </h3>
+          <h5 className="is-size-6 is-text-truncated">
             <a
               className="has-text-grey"
               href={linkData.longUrl}
@@ -40,7 +42,7 @@ const MyLink = () => {
               {linkData.longUrl}
             </a>
           </h5>
-          <h5 className="is-size-6">
+          <h5 className="is-size-6 is-text-truncated">
             <a
               href={linkData.shortUrl}
               target="_blank"
