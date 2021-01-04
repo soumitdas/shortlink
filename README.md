@@ -1,7 +1,7 @@
 # shortlink
 
 <p align="center">
-  <img alt="screenshot of shortlink" src="https://i.imgur.com/ahQR9h0.png">
+  <img alt="screenshot of shortlink" src="https://i.imgur.com/UJefdzF.png">
 </p>
 
 ![Netlify](https://img.shields.io/netlify/b944ffc1-b482-42fa-b4cd-eaf8a3306b88) ![GitHub language count](https://img.shields.io/github/languages/count/soumitdas/shortlink) ![GitHub top language](https://img.shields.io/github/languages/top/soumitdas/shortlink) ![Website](https://img.shields.io/website?url=https%3A%2F%2Fapp.go6.in%2F)

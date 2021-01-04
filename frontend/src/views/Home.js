@@ -15,7 +15,7 @@ const Home = () => {
             <h1 className="title is-spaced is-1">
               Short those ugly long URL's into smaller one
             </h1>
-            <p className="subtitle is-3">A simple URL shortner for everyone</p>
+            <p className="subtitle is-3">A simple URL shortener for everyone</p>
           </div>
         </div>
       </section>
